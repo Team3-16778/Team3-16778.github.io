@@ -18,8 +18,12 @@ const App = () => {
             <li><a href="#functionalArchitecture" style={linkStyle}>Functional Architecture</a></li>
             <li><a href="#designTradeStudies" style={linkStyle}>Design Trade Studies</a></li>
             <li><a href="#cyberPhysical" style={linkStyle}>Cyberphysical Architecture</a></li>
-            <li><a href="#systemDescription" style={linkStyle}>System Description</a></li>
+            <li><a href="#systemDesign" style={linkStyle}>System Design</a></li>
+            <li><a href="#systemImplementation" style={linkStyle}>System Implementation</a></li>
+            <li><a href="#systemPerformance" style={linkStyle}>System Performance</a></li>
             <li><a href="#projectManagement" style={linkStyle}>Project Management</a></li>
+            <li><a href="#media" style={linkStyle}>Media</a></li>
+            <li><a href="#teamPage" style={linkStyle}>Team Page</a></li>
             <li><a href="#documents" style={linkStyle}>Documents</a></li>
           </ul>
         </nav>
@@ -312,8 +316,8 @@ const App = () => {
         </div>
       </section>
 
-      <section id="systemDescription" style={sectionStyle("lightseagreen")}>
-        <h2>System Description</h2>
+      <section id="systemDesign" style={sectionStyle("lightseagreen")}>
+        <h2>System Design</h2>
 
         <h3>Gantry System</h3>
         <p>
@@ -337,6 +341,17 @@ const App = () => {
         </p>
       </section>
 
+      <section id="systemImplementation" style={sectionStyle("lightgreen")}>
+        <h2>Project Implementation</h2>
+        <h3>Coming soon</h3>
+
+      </section>
+
+      <section id="systemPerformance" style={sectionStyle("lightorange")}>
+        <h2>Project Performance</h2>
+        <h3>Coming soon</h3>
+      </section>
+
       <section id="projectManagement" style={sectionStyle("lightpink")}>
         <h2>Project Management</h2>
         <h3>Timeline</h3>
@@ -347,6 +362,30 @@ const App = () => {
             style={imageStyle}
           />
         </div>
+      </section>
+
+      <section id="Media" style={sectionStyle("violet")}>
+        <h2>media</h2>
+        <h3>media and descriptions coming soon</h3>
+        {/* <div style={imageContainerStyle}>
+          <img
+            src="/assets/schedule.png"
+            alt="Functional Architecture"
+            style={imageStyle}
+          />
+        </div> */}
+      </section>
+
+      <section id="teamPage" style={sectionStyle("lightgray")}>
+        <h2>Team Page</h2>
+        <h3>Team photos and descriptions coming soon</h3>
+        {/* <div style={imageContainerStyle}>
+          <img
+            src="/assets/schedule.png"
+            alt="Functional Architecture"
+            style={imageStyle}
+          />
+        </div> */}
       </section>
 
       <section id="documents" style={sectionStyle("lightsteelblue")}>
