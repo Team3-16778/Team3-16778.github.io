@@ -30,6 +30,8 @@ const App = () => {
       </header>
 
       {/* Content Sections */}
+
+       {/* INTRO */}
       <section id="projectDescription" style={{ ...sectionStyle("lightblue"), paddingTop: "120px" }}>
         <h2>Project Description</h2>
 
@@ -341,6 +343,8 @@ const App = () => {
         </p>
       </section>
 
+
+      {/* IMPLEMENTATION */}
       <section id="systemImplementation" style={sectionStyle("lightgreen")}>
         <h2>Project Implementation</h2>
         <h3>Coming soon</h3>
@@ -352,6 +356,7 @@ const App = () => {
         <h3>Coming soon</h3>
       </section>
 
+      {/* OTHER */}
       <section id="projectManagement" style={sectionStyle("lightpink")}>
         <h2>Project Management</h2>
         <h3>Timeline</h3>
@@ -365,32 +370,55 @@ const App = () => {
       </section>
 
       <section id="Media" style={sectionStyle("violet")}>
-        <h2>media</h2>
+        <h2>Media</h2>
         <h3>media and descriptions coming soon</h3>
-        {/* <div style={imageContainerStyle}>
-          <img
-            src="/assets/schedule.png"
-            alt="Functional Architecture"
-            style={imageStyle}
-          />
-        </div> */}
-      </section>
+</section>
 
-      <section id="teamPage" style={sectionStyle("lightgray")}>
-        <h2>Team Page</h2>
-        <h3>Team photos and descriptions coming soon</h3>
-        {/* <div style={imageContainerStyle}>
-          <img
-            src="/assets/schedule.png"
-            alt="Functional Architecture"
-            style={imageStyle}
-          />
-        </div> */}
-      </section>
+<section id="teamPage" style={sectionStyle("lightgray")}>
+  <h2>Team Page</h2>
+  <div style={{ display: "flex", flexWrap: "wrap", gap: "2rem", justifyContent: "center" }}>
+    {[
+      {
+        name: "Chase",
+        image: "/assets/members/chase.jpeg",
+        description: "MS AI Engineering — Portfolio & Computer Vision"
+      },
+      {
+        name: "Xinwen",
+        image: "/assets/members/xinwen.jpeg",
+        description: "MS Mechanical Engineering — Robotics & Computer Vision"
+      },
+      {
+        name: "Arushi",
+        image: "/assets/members/arushi.jpeg",
+        description: "MS Mechanical Engineering — Hardware (End Effector)"
+      },
+      {
+        name: "Jack",
+        image: "/assets/members/jack.jpeg",
+        description: "MS Mechanical Engineering — Hardware (Gantry System)"
+      }
+    ].map((member, index) => (
+      <div key={index} style={{ textAlign: "center", maxWidth: "200px" }}>
+        <img
+          src={member.image}
+          alt={member.name}
+          style={{ ...imageStyle, borderRadius: "50%", width: "100%", height: "auto" }}
+        />
+        <p style={{ marginTop: "0.5rem" }}>{member.description}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
+
 
       <section id="documents" style={sectionStyle("lightsteelblue")}>
         <h2>Documents</h2>
-        <a href="https://docs.google.com/document/d/1u5hSzZ_wIe2xkZCR74zT8-o6ew036MobDVUHgZ3yO08/edit?usp=sharing" target="_blank" rel="noreferrer">Design Proposal</a>
+        <p><a href="https://docs.google.com/document/d/1u5hSzZ_wIe2xkZCR74zT8-o6ew036MobDVUHgZ3yO08/edit?usp=sharing" target="_blank" rel="noreferrer">Design Proposal</a></p>
+        <p><a href="https://drive.google.com/drive/folders/1vSluePcS2WWNmUFQC8DQalTqs3hoIH1V?usp=sharing" target="_blank" rel="noreferrer">Google Drive Link w/ Lab Reports</a></p>
+        <p><a href="https://github.com/Team3-16778" target="_blank" rel="noreferrer">Team Github Page</a></p>
+
         {/* <h3>Drawings & Schematics</h3>
         <p>Mechanical and electrical diagrams.</p>
         <h3>Component Testing</h3>
