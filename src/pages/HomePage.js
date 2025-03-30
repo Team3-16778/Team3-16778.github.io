@@ -37,9 +37,9 @@ const HomePage = () => (
       </p>
 
       <ul>
-        <li>Minimally Invasive & High Precision: Reduces the risk of procedural complications</li>
-        <li>Real-Time Feedback for Dynamic Adjustments: Continuous needle tracking helps adjust for patient movement (e.g., respiration) in real time, reducing errors. </li>
-        <li>Reduced Healthcare Costs: Improves accessibility to high-precision diagnostics.</li>
+        <li><strong>Minimally Invasive & High Precision:</strong> Reduces the risk of procedural complications</li>
+        <li><strong>Real-Time Feedback for Dynamic Adjustments:</strong> Continuous needle tracking helps adjust for patient movement (e.g., respiration) in real time, reducing errors. </li>
+        <li><strong>Reduced Healthcare Costs:</strong> Improves accessibility to high-precision diagnostics.</li>
       </ul>
 
 
@@ -101,20 +101,20 @@ const HomePage = () => (
 
       <h3>Robotic Arm vs. Gantry</h3>
       <p>
-        The Biopsy Bot required a choice between a **gantry-based system** and a **robotic arm**.
-        Gantry systems are commonly used in **radiation therapy** (e.g., CyberKnife) for their **precision and stability**,
-        whereas robotic arms (e.g., da Vinci Surgical System) provide **greater dexterity and flexibility**.
+        The Biopsy Bot required a choice between a <strong>gantry-based system</strong> and a <strong>robotic arm</strong>.
+        Gantry systems are commonly used in <strong>radiation therapy</strong> (e.g., CyberKnife) for their <strong>precision and stability</strong>,
+        whereas robotic arms (e.g., da Vinci Surgical System) provide <strong>greater dexterity and flexibility</strong>.
       </p>
 
       <p>A trade study was conducted, evaluating both designs based on key criteria:</p>
       <ul>
-        <li><strong>Precision</strong>: Accuracy in positioning the biopsy needle.</li>
-        <li><strong>Dexterity (Degrees of Freedom)</strong>: Range of movement available.</li>
-        <li><strong>Sensor Integration</strong>: Ease of incorporating tracking and feedback sensors.</li>
-        <li><strong>Footprint</strong>: Space efficiency.</li>
-        <li><strong>Setup Time</strong>: Complexity of initial setup.</li>
-        <li><strong>Simplicity to Manufacture</strong>: Ease of prototyping and assembly.</li>
-        <li><strong>Coolness</strong>: User appeal and intuitive design.</li>
+        <li><strong>Precision:</strong> Accuracy in positioning the biopsy needle.</li>
+        <li><strong>Dexterity (Degrees of Freedom):</strong> Range of movement available.</li>
+        <li><strong>Sensor Integration:</strong> Ease of incorporating tracking and feedback sensors.</li>
+        <li><strong>Footprint:</strong> Space efficiency.</li>
+        <li><strong>Setup Time:</strong> Complexity of initial setup.</li>
+        <li><strong>Simplicity to Manufacture:</strong> Ease of prototyping and assembly.</li>
+        <li><strong>Coolness:</strong> User appeal and intuitive design.</li>
       </ul>
 
       <table style={tableStyle}>
@@ -157,12 +157,12 @@ const HomePage = () => (
         </tbody>
       </table>
 
-      <p><strong>Conclusion:</strong> The **gantry-based system** was selected for its **higher precision, better sensor integration, and manufacturability**, making it ideal for biopsy procedures.</p>
+      <p><strong>Conclusion:</strong> The <strong>gantry-based system</strong> was selected for its <strong>higher precision, better sensor integration, and manufacturability</strong>, making it ideal for biopsy procedures.</p>
 
       <h3>Gantry Designs</h3>
       <p>
-        Two configurations were compared: **underhand gantry** and **overhead gantry**.
-        The underhand design provides **higher load capacity and simpler installation**, while the overhead gantry offers **better stiffness** but is more complex to install.
+        Two configurations were compared: <strong>underhand gantry</strong> and <strong>overhead gantry</strong>.
+        The underhand design provides <strong>higher load capacity and simpler installation</strong>, while the overhead gantry offers <strong>better stiffness</strong> but is more complex to install.
       </p>
 
       <table style={tableStyle}>
@@ -202,12 +202,12 @@ const HomePage = () => (
         </tbody>
       </table>
 
-      <p><strong>Conclusion:</strong> The **underhand gantry** was chosen due to its **higher capacity and simpler installation**.</p>
+      <p><strong>Conclusion:</strong> The <strong>underhand gantry</strong> was chosen due to its <strong>higher capacity and simpler installation</strong>.</p>
 
       <h3>End Effector Design</h3>
       <p>
-        The **end effector** is responsible for **precise needle insertion and control**.
-        Two designs were considered: a **gimbal-inspired end effector** and a **delta robot-inspired end effector**.
+        The <strong>end effector</strong> is responsible for <strong>precise needle insertion and control</strong>.
+        Two designs were considered: a <strong>gimbal-inspired end effector</strong> and a <strong>delta robot-inspired end effector</strong>.
       </p>
 
       <table style={tableStyle}>
@@ -244,12 +244,12 @@ const HomePage = () => (
         </tbody>
       </table>
 
-      <p><strong>Conclusion:</strong> The **gimbal-inspired design** was selected for its **greater accuracy and control**.</p>
+      <p><strong>Conclusion:</strong> The <strong>gimbal-inspired design</strong> was selected for its <strong>greater accuracy and control</strong>.</p>
 
       <h3>Needle Actuator Mechanism</h3>
       <p>
-        Three needle actuator designs were analyzed: **rack and pinion, lead screw, and slider crank mechanisms**.
-        The **lead screw** was chosen due to its **high precision and self-locking capability**.
+        Three needle actuator designs were analyzed: <strong>rack and pinion, lead screw, and slider crank mechanisms</strong>.
+        The <strong>lead screw</strong> was chosen due to its <strong>high precision and self-locking capability</strong>.
       </p>
 
       <table style={tableStyle}>
@@ -299,7 +299,7 @@ const HomePage = () => (
         </tbody>
       </table>
 
-      <p><strong>Conclusion:</strong> The **lead screw mechanism** was selected for its **high precision and stability**.</p>
+      <p><strong>Conclusion:</strong> The <strong>lead screw mechanism</strong> was selected for its <strong>high precision and stability</strong>.</p>
 
     </section>
 
