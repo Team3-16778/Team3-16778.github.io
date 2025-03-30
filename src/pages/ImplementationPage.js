@@ -22,11 +22,28 @@ const ImplementationPage = () => (
     <section id="systemPerformance" style={sectionStyle("lightorange")}>
       <h2>Project Performance</h2>
       <p>
-        Early testing on gelatin phantoms shows target acquisition within 0.8 mm.
-        Real-time motion correction improved accuracy by 35%. Final validation
-        will be done using tracked respiratory motion datasets.
+        Testing is ongoing, but initial results show the system can detect objects using either YOLO or a color mask. Object localization is scheduled for completion by <strong>4/4</strong>.
+        Currently, the color mask requires tuning. The theoretical example shows strong performance, but challenges remain due to uncertain lesion colors and lighting noise in the live demo. Further implementation is required.
+      </p>
+
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <img
+          src="/assets/media/color_mask_rough.jpeg"
+          alt="Color Mask - Live Data"
+          style={{ width: "50%", height: "auto", margin: "20px 0" }}
+        />
+        <img
+          src="/assets/media/color_mask_fake_data.png"
+          alt="Color Mask - Simulated Data"
+          style={{ width: "50%", height: "auto", margin: "20px 0" }}
+        />
+      </div>
+
+      <p>
+        Full range-of-motion (ROM) for the gantry and end effector will be demonstrated by <strong>4/11</strong>. The system is expected to detect, localize, and move to target objects by <strong>4/18</strong>.
       </p>
     </section>
+
   </>
 );
 
