@@ -12,10 +12,14 @@ const ImplementationPage = () => (
     <section id="systemImplementation" style={sectionStyle("lightgreen")}>
       <h2>Project Implementation</h2>
       <p>
-        The physical prototype integrates 3D printed and machined aluminum parts for
-        structural rigidity. Electronics are routed via custom PCBs to ensure signal
-        reliability. Firmware for low-level control is written in C++ running on a
-        Teensy microcontroller, while high-level control and vision are handled in Python on a Jetson Nano.
+        <strong>Computer Vision:</strong>Testing different object detection and localization strategies.
+        <break></break>
+        <strong>Gantry:</strong>3d ROM completed, working on mounting system to operating table.
+        <break></break>
+        <strong>Computer Vision:</strong>Full ROM completed, need to test injection strength and mounting to gantry.
+        <break></break>
+        <strong>Subsystem Integration:</strong>Sysio test started, further testing required for full integration with cams and actuators.
+
       </p>
     </section>
 
