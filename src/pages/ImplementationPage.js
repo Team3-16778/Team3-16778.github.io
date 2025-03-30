@@ -2,7 +2,7 @@ import React from "react";
 
 const sectionStyle = (bgColor) => ({
   backgroundColor: bgColor,
-  paddingTop: "100px",
+  paddingTop: "20px",
   paddingBottom: "20px",
   paddingLeft: "20px",
 });
