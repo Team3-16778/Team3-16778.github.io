@@ -74,10 +74,134 @@ const OtherPage = () => (
         </table>
       </div>
 
-      {/* 
-      <div style={imageContainerStyle}>
-        <img src="/assets/schedule.png" alt="Timeline" style={imageStyle} />
-      </div> */}
+      <h3>Risk Management</h3>
+      <div style={{ overflowX: "auto", width: "100%" }}>
+        <table style={{ borderCollapse: "collapse", minWidth: "800px" }}>
+          <thead>
+            <tr>
+              {["Risk", "Identification", "Description", "Management"].map((header, idx) => (
+                <th
+                  key={idx}
+                  style={{
+                    border: "1px solid black",
+                    padding: "8px",
+                    backgroundColor: "#f0e68c",
+                    textAlign: "left",
+                  }}
+                >
+                  {header}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              {
+                risk: "Technical",
+                items: [
+                  {
+                    id: "Complex System Integration",
+                    desc: ["Compatibility issues", "Timing mismatches"],
+                    mgmt: ["Unit and integration tests", "Standardized communication", "Modular testing"],
+                  },
+                  {
+                    id: "Algorithm Accuracy & Image Processing Precision",
+                    desc: ["Optical refraction (Phantom)", "Inaccuracies or delays", "Precision and safety"],
+                    mgmt: ["Iterative testing", "Calibration procedures", "Redundant measurements"],
+                  },
+                  {
+                    id: "Hardware-Software Synchronization",
+                    desc: ["Positioning errors"],
+                    mgmt: ["Real-time logging", "Simulation for debugging"],
+                  },
+                ],
+              },
+              {
+                risk: "Schedule",
+                items: [
+                  {
+                    id: "Module Development & Integration Delays",
+                    desc: ["Technical challenges", "Debugging complexity", "Insufficient expertise"],
+                    mgmt: ["Milestone plan", "Buffer periods", "Use of mature tools"],
+                  },
+                ],
+              },
+              {
+                risk: "Cost",
+                items: [
+                  {
+                    id: "Hardware Cost Overruns",
+                    desc: ["High-performance computing & sensors (Jetson, Cameras)"],
+                    mgmt: ["Standardized hardware", "Contingency budget"],
+                  },
+                ],
+              },
+            ].map((group, gIdx) =>
+              group.items.map((item, iIdx) => (
+                <tr key={`${gIdx}-${iIdx}`}>
+                  {iIdx === 0 && (
+                    <td
+                      rowSpan={group.items.length}
+                      style={{
+                        border: "1px solid black",
+                        padding: "8px",
+                        fontWeight: "bold",
+                        verticalAlign: "top",
+                        backgroundColor: "",
+                      }}
+                    >
+                      {group.risk}
+                    </td>
+                  )}
+                  <td style={{ border: "1px solid black", padding: "8px", backgroundColor: "" }}>{item.id}</td>
+                  <td style={{ border: "1px solid black", padding: "8px", backgroundColor: "" }}>
+                    <ul style={{ margin: 0, paddingLeft: "20px" }}>
+                      {item.desc.map((d, i) => (
+                        <li key={i}>{d}</li>
+                      ))}
+                    </ul>
+                  </td>
+                  <td style={{ border: "1px solid black", padding: "8px", backgroundColor: "" }}>
+                    <ul style={{ margin: 0, paddingLeft: "20px" }}>
+                      {item.mgmt.map((m, i) => (
+                        <li key={i}>{m}</li>
+                      ))}
+                    </ul>
+                  </td>
+                </tr>
+              ))
+            )}
+          </tbody>
+        </table>
+      </div>
+
+    <h3>Budget + BOM</h3>
+    <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem" }}>
+        {[
+          { label: "Bill of Materials", url: "https://docs.google.com/spreadsheets/d/1h7MeQXINK1buxKebyinGersZ1BSrWOFt/edit?usp=sharing&ouid=103231227904424893847&rtpof=true&sd=true" },
+          { label: "Order Hisotry", url: "https://drive.google.com/drive/folders/1-7TGZ131BtQvsD9QIuw_yKREmDMyT1JU?usp=sharing" },
+        ].map((doc, idx) => (
+          <a
+            key={idx}
+            href={doc.url}
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              backgroundColor: "#4682B4",
+              color: "white",
+              padding: "10px 16px",
+              textDecoration: "none",
+              borderRadius: "6px",
+              fontWeight: "500",
+              transition: "background-color 0.2s",
+            }}
+            onMouseEnter={(e) => (e.target.style.backgroundColor = "#5A9BD5")}
+            onMouseLeave={(e) => (e.target.style.backgroundColor = "#4682B4")}
+          >
+            {doc.label}
+          </a>
+        ))}
+      </div>
     </section>
 
     <section id="Media" style={sectionStyle("violet")}>
