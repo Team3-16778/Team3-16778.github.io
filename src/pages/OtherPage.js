@@ -20,7 +20,7 @@ const imageContainerStyle = {
 
 const OtherPage = () => (
   <>
-    <section id="projectManagement" style={sectionStyle("lightpink")}>
+    <section id="projectManagement" style={{ ...sectionStyle("lightpink"), paddingTop: "20px" }}>
       <h2>Project Management</h2>
       <h3>Timeline</h3>
 
