@@ -61,6 +61,15 @@ const App = () => {
             <Route path="/implementation" element={<ImplementationPage />} />
             <Route path="/documentation" element={<OtherPage />} />
           </Routes>
+
+
+        </div>
+
+        <div style={{ display: "none" }}>
+          <HomePage />
+          <DesignProcessPage />
+          <ImplementationPage />
+          <OtherPage />
         </div>
       </div>
     </Router>
