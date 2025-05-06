@@ -259,6 +259,7 @@ const OtherPage = () => (
           { label: "Lab Reports", url: "https://drive.google.com/drive/folders/1f4UQ71y84HZz48Y93UMKa-8skSeolSej?usp=sharing" },
           { label: "Mid Semester Presentation", url: "https://docs.google.com/presentation/d/144JKlhlkmfBVysk6inQBTW8deuK9NPeeX8AmKtwoueg/edit?usp=sharing" },
           { label: "Team GitHub", url: "https://github.com/Team3-16778" },
+          { label: "Final Report", url: "https://drive.google.com/file/d/1l_dflCSogmUA19m_biFllypSIEzaiBYn/view?usp=drive_link" },
         ].map((doc, idx) => (
           <a
             key={idx}
