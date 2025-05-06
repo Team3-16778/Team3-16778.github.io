@@ -19,36 +19,37 @@ const App = () => {
 
           <nav>
             <ul className="nav-style">
-              
+
               <li><Link to="/" className="nav-link">Home</Link></li>
 
               <li className="dropdown">
                 <Link to="/design" className="nav-link">Design Process ▾</Link>
                 <ul className="dropdown-content">
-                  <li><a href="/design#designRequirements" className="dropdown-link">Requirements</a></li>
-                  <li><a href="/design#functionalArchitecture" className="dropdown-link">Architecture</a></li>
-                  <li><a href="/design#designTradeStudies" className="dropdown-link">Trade Studies</a></li>
-                  <li><a href="/design#systemDesign" className="dropdown-link">System Design</a></li>
+                  <li><a href="#/design#designRequirements" className="dropdown-link">Requirements</a></li>
+                  <li><a href="#/design#functionalArchitecture" className="dropdown-link">Architecture</a></li>
+                  <li><a href="#/design#designTradeStudies" className="dropdown-link">Trade Studies</a></li>
+                  <li><a href="#/design#systemDesign" className="dropdown-link">System Design</a></li>
                 </ul>
               </li>
 
               <li className="dropdown">
                 <Link to="/implementation" className="nav-link">Implementation ▾</Link>
                 <ul className="dropdown-content">
-                  <li><a href="/implementation#systemImplementation" className="dropdown-link">Project Implementation</a></li>
-                  <li><a href="/implementation#systemPerformance" className="dropdown-link">Project Preformance</a></li>
+                  <li><a href="#/implementation#systemImplementation" className="dropdown-link">Project Implementation</a></li>
+                  <li><a href="#/implementation#systemPerformance" className="dropdown-link">Project Performance</a></li>
                 </ul>
               </li>
 
               <li className="dropdown">
                 <Link to="/documentation" className="nav-link">Documentation ▾</Link>
                 <ul className="dropdown-content">
-                  <li><a href="/documentation#projectManagement" className="dropdown-link">Project Management</a></li>
-                  <li><a href="/documentation#Media" className="dropdown-link">Media</a></li>
-                  <li><a href="/documentation#teamPage" className="dropdown-link">Team Page</a></li>
-                  <li><a href="/documentation#documents" className="dropdown-link">Documents</a></li>
+                  <li><a href="#/documentation#projectManagement" className="dropdown-link">Project Management</a></li>
+                  <li><a href="#/documentation#Media" className="dropdown-link">Media</a></li>
+                  <li><a href="#/documentation#teamPage" className="dropdown-link">Team Page</a></li>
+                  <li><a href="#/documentation#documents" className="dropdown-link">Documents</a></li>
                 </ul>
               </li>
+
             </ul>
           </nav>
         </header>
